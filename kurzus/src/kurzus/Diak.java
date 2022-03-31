@@ -3,17 +3,17 @@ package kurzus;
 
 public class Diak {
 	private int ID;
-	private String név;
+	private String nev;
 	private LeadottFeladat feladat;
 	
-	public Diak(String név) {
+	public Diak(String nev) {
 		super();
-		this.név = név;
+		this.nev = nev;
 	}
 
 	@Override
 	public String toString() {
-		return "Diak [ID=" + ID + ", név=" + név + ", feladat=" + feladat + "]";
+		return "Diak [ID=" + ID + ", nev=" + nev + ", feladat=" + feladat + "]";
 	}
 
 	// GETTER, SETTER
@@ -25,8 +25,8 @@ public class Diak {
 		ID = iD;
 	}
 
-	public String getNév() {
-		return név;
+	public String getnev() {
+		return nev;
 	}
 
 	public LeadottFeladat getFeladat() {
