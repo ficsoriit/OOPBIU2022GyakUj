@@ -10,9 +10,14 @@ public class Szemeszter {
 	
 	public void regisztral(int n) {
 		for(int i = 0; i < n; i++) {
-			adatok.getNévsor().add(new Diak("Diak" + i));
+			adatok.getNevsor().add(new Diak("Diak" + (i+1)));
 		}
 	}
 	
-	
+	public void nevsorKiir() {
+		System.out.println("Nevsor:");
+		for(Diak item : adatok.getNevsor()) {
+			System.out.println(item);
+		}
+	}
 }

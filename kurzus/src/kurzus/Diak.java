@@ -9,6 +9,9 @@ public class Diak {
 	public Diak(String nev) {
 		super();
 		this.nev = nev;
+		ID = Kurzus.getLegnagyobbID();
+		Kurzus.setLegnagyobbID(ID+1);
+		
 	}
 
 	@Override

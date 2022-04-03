@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Kurzus {
 	private String kurzusID;
 	private static int legnagyobbID;
-	private ArrayList<Diak> névsor = new ArrayList<Diak>();
+	private ArrayList<Diak> nevsor = new ArrayList<Diak>();
 	
 	public Kurzus(String kurzusID) {
 		super();
@@ -15,11 +15,20 @@ public class Kurzus {
 
 	@Override
 	public String toString() {
-		return "Kurzus [kurzusID=" + kurzusID + ", névsor=" + névsor + "]";
+		return "Kurzus [kurzusID=" + kurzusID + ", nevsor=" + nevsor + "]";
 	}
 
-	public ArrayList<Diak> getNévsor() {
-		return névsor;
+	
+	public static int getLegnagyobbID() {
+		return legnagyobbID;
+	}
+
+	public static void setLegnagyobbID(int legnagyobbID) {
+		Kurzus.legnagyobbID = legnagyobbID;
+	}
+
+	public ArrayList<Diak> getNevsor() {
+		return nevsor;
 	}
 	
 }

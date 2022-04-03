@@ -3,13 +3,13 @@ package kurzus;
 import java.time.LocalDate;    
 
 public class LeadottFeladat {
-	private LocalDate dátum;
-	private int pontszám;
+	private LocalDate datum;
+	private int pontszam;
 	
-	public LeadottFeladat(LocalDate dátum) {
+	public LeadottFeladat(LocalDate datum) {
 		super();
-		this.dátum = dátum;
-		this.pontszám = -100;
+		this.datum = datum;
+		this.pontszam = -100;
 	}
 	
 	
